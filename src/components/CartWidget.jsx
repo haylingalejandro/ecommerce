@@ -1,12 +1,28 @@
 import React from 'react'
-import { FaOpencart } from "react-icons/fa";
-import { Button } from '@chakra-ui/react'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Badge from '@mui/material/Badge';
+import { NavLink } from 'react-router-dom';
+
+
+const lightTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#ffb74d',
+    },
+  },
+});
+
+
 const CartWidget = () => {
   return (
-<Button colorScheme='teal' size='md' variant='outline'>
-        <FaOpencart />
-            <p> 5</p>
-        </Button>
+    <ThemeProvider theme={lightTheme}> 
+      <NavLink to={'/cart'}>
+        <Badge badgeContent={4} color="primary">
+          <AddShoppingCartIcon />
+        </Badge>
+      </NavLink>
+    </ThemeProvider>
   )
 }
 

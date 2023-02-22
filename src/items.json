@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Chew ball",
+        "description": "ining Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "price": 10.55,
+        "pictureUrl": "../public/images/chewball.jpg",
+        "categoria": "toy"
+    },
+    {
+        "id": 2,
+        "title": "Vitamins",
+        "description": "ining Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "price": 35.55,
+        "pictureUrl": "../public/images/vitamins.jpg",
+        "categoria": "food"
+    },
+    {
+        "id": 3,
+        "title": "Dog Coat",
+        "description": "ining Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "price": 50.55,
+        "pictureUrl": "../public/images/dogcoat.jpg",
+        "categoria": "clothe"
+    },
+    {
+        "id": 4,
+        "title": "Cat food",
+        "description": "ining Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "price": 5.55,
+        "pictureUrl": "../public/images/catfood.jpg",
+        "categoria": "food"
+    }
+]

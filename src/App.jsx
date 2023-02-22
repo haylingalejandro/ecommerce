@@ -1,20 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import NavBar from './components/NavBar'
+import Navbar from './components/NavBar'
+import ItemDetailContainer from './containers/ItemDetailContainer'
 import ItemListContainer from './containers/ItemListContainer'
-import { ChakraProvider } from '@chakra-ui/react'
+import Cart from './components/Cart' 
 
 
-function App() {   
+function App() {
+
   return (
-    <div className="App">
-    <ChakraProvider>
-      <NavBar/>
-      <ItemListContainer greeting={"Greetings!"}/>
-    </ChakraProvider>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+
+        <Route exact path="/" element={<ItemListContainer />}></Route>
+        <Route exact path="/categorias" element={<ItemListContainer />}></Route>
+        <Route exact path="/categorias/:categorias" element={<ItemListContainer />}></Route>
+        <Route exact path="/cart" element={<Cart />}></Route>
+        <Route exact path="/item/:id" element={<ItemDetailContainer />}></Route>
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
 export default App
+
